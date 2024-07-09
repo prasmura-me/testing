@@ -6,9 +6,10 @@
 version: 2
 updates:
   - package-ecosystem: "pip"
-    directory: "/test/prasad.txt"
+    directory: "/test/custom.txt"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 0
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
