@@ -5,6 +5,13 @@
 
 version: 2
 updates:
+  - package-ecosystem: "docker" # for Docker images
+    directory: "/" # path to the directory containing the Dockerfile
+    schedule:
+      interval: "daily" # how often to check for updates
+    labels:
+      - "dependency-update" # GitHub labels to assign to pull requests
+      - "docker"
   - package-ecosystem: "pip"
     directory: "/test/custom.txt"
     schedule:
