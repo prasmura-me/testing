@@ -1,5 +1,5 @@
 # Dockerfile
-FROM python:3.8.1-slim-buster
+FROM python:3.11.4-slim-buster
 
 # Install security updates and required packages
 RUN apt-get update && apt-get install -y \
